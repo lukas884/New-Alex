@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Alex Restaurant And Bar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
+  <style>
+    body, h1, h5 {
+      font-family: "Source Sans Pro", sans-serif;
+    }
+    body, html {
+      height: 100%;
+    }
+    .bgimg {
+      background-image: url('image_main.webp');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    .bgimg2 {
+      background-image: url('white.webp');
+      min-height: 50%;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+<!-- First Page -->
+<header class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo blur-1">
+    <p>New Alex</p>
+  </div>
+  <nav class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
+  </nav>
+  <footer class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge " ></p>
+    <p class="w3-xlarge">monday- friday xx-xx | saturday xx-xx</p>
+  </footer>
+</header>
+
+
+<!-- Second Page -->
+<header class="bgimg2 w3-display-container w3-text-white">
+  <aside class="w3-display-right ">
+    <img src="image_3.webp" style= "max-width: 100%; max-height: 250px;">
+  </aside>
+  
+  <footer class="w3-display-left w3-container w3-text-black">
+    <p class="w3-xlarge " >Lorem ipsum dolor sit amet. </p>
+    <p class="w3-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel neque purus. Morbi venenatis at dui in sagittis. 
+      Nulla at vestibulum sapien. In ultrices turpis quis eros hendrerit dictum. Cras efficitur congue dictum. 
+      Etiam ac nunc at arcu condimentum egestas facilisis ut nisi. Nullam elementum viverra tellus finibus accumsan. Nulla facilisi. 
+      Etiam eget purus non tortor ultricies tempor volutpat et tortor. Etiam tincidunt ultrices maximus. 
+      Fusce accumsan condimentum nibh at molestie. </p>
+  </footer>
+</header>
+
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Starters</h1>
+    </div>
+    <section class="w3-container">
+      <h5>Tomato Soup <b>$2.50</b></h5>
+      <h5>Chicken Salad <b>$3.50</b></h5>
+      <h5>Bread and Butter <b>$1.00</b></h5>
+    </section>
+    <div class="w3-container w3-black">
+      <h1>Main Courses</h1>
+    </div>
+    <section class="w3-container">
+      <h5>Grilled Fish and Potatoes <b>$8.50</b></h5>
+      <h5>Italian Pizza <b>$5.50</b></h5>
+      <h5>Veggie Pasta <b>$4.00</b></h5>
+      <h5>Chicken and Potatoes <b>$6.50</b></h5>
+      <h5>Deluxe Burger <b>$5.00</b></h5>
+    </section>
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1>
+    </div>
+    <section class="w3-container">
+      <h5>Fruit Salad <b>$2.50</b></h5>
+      <h5>Ice cream <b>$2.00</b></h5>
+      <h5>Chocolate Cake <b>$4.00</b></h5>
+      <h5>Cheese <b>$5.50</b></h5>
+    </section>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <section class="w3-container">
+      <p>Pellentesque ac tellus turpis. Pellentesque habitant morbi tristique senectus et:</p>
+      <h5>Curabitur quis <b>xx</b></h5>
+      <h5>Curabitur quis <b>xx</b></h5>
+      <h5>Curabitur quis <b>xx</b></h5>
+      <h5>Curabitur quis<b>xx</b></h5>
+    </section>
+  </div>
+</div>
+
+</body>
+</html>
