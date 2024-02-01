@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Alex Restaurant and Bar</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="w3styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -44,31 +45,89 @@
         </div>
     </nav>
     
-    <!-- Hero Section-->
-    <div class="main" >
-        <div class="main__container">
-            <div class="main__content">
-                <h1>Menu Page, not done</h1>
-                <p>Restaurant and Bar</p>
-                <button class="main__btn"><a href="/">Get Started</a></button>
+    <!-- Menu Section-->
+    <div class="menu__main">
+        <h1 class="menu__title">The Menu</h1>
+        <div class="menu__container">
+            <div class="w3-content">
+    
+                
+                <div class="w3-row w3-center w3-border w3-border-black">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Pizza</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Salads</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Starter</div>
+                </a>
+                </div>
+            
+                <div id="Pizza" class="w3-display-container menu w3-padding-32 w3-white">
+                <h1 style="margin: 10px;" ><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+                <p  style="margin: 10px;" class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                <hr>
+            
+                <h1 style="margin: 10px;"><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                <hr>
+                
+                <h1 style="margin: 10px;"><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+                <hr>
+            
+                <h1 style="margin: 10px;"><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                <hr>
+            
+                <h1 style="margin: 10px;"><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                <hr>
+            
+                <h1 style="margin: 10px;"><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                </div>
+            
+                <div id="Pasta" class="w3-display-container menu w3-padding-32 w3-white">
+                <h1 style="margin: 10px;"><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+                <hr>
+            
+                <h1 style="margin: 10px;" ><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Ravioli filled with cheese</p>
+                <hr>
+                
+                <h1 style="margin: 10px;"><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+                <hr>
+            
+                <h1 style="margin: 10px;" ><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+                </div>
+            
+            
+                <div id="Starter" class="w3-display-container menu w3-padding-32 w3-white">
+                <h1 style="margin: 10px;" ><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Ask the waiter</p>
+                <hr>
+            
+                <h1 style="margin: 10px;"><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+                <hr>
+                
+                <h1 style="margin: 10px;" ><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+                <hr>
+                
+                <h1 style="margin: 10px;"><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+                <p style="margin: 10px;" class="w3-text-grey">Tomatoes and mozzarella</p>
+                </div><br>
+            
             </div>
         </div>
     </div>
 
-    <!-- About Section -->
-    <div class="services" >
-        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur 
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div class="services__container">
-            <div class="services__card">
-            </div>
-            <div class="services__card">
-            </div>
-            
-        </div>
-    </div>
 
     <!-- Footer Section -->
 
