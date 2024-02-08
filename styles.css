@@ -349,7 +349,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 110vh;
+    height: 130vh;
 }
 
 .services p {
@@ -564,7 +564,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .contact__content {
@@ -630,7 +630,7 @@
     }
     
     .contact {
-        height: 120vh;
+        height: 140vh;
     }
 }
 
@@ -639,10 +639,19 @@
 .menu__main {
     margin-top: -10px;
     background: #C2B280;
-    height: 120vh;
+    height: 130vh;
 }
 
 .menu__title {
    font-size: 4rem;
    text-align: center;
 }
+
+.menu h1{
+    font-size:36px;
+    line-height:1.5;
+    font-weight:400;
+    margin:10px 0;
+}
+
+.menu hr{border:0;border-top:1px solid #eee;margin:20px 0}
