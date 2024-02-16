@@ -645,6 +645,7 @@
 .menu__title {
    font-size: 4rem;
    text-align: center;
+   margin-top: 10px;
 }
 
 .menu h1{
@@ -655,3 +656,40 @@
 }
 
 .menu hr{border:0;border-top:1px solid #eee;margin:20px 0}
+
+@media screen and (max-width: 460px) {
+    .menu__main{
+        height: 150vh;
+    }
+}
+
+
+@media screen and (max-height: 800px) {
+    .menu__main{
+        height: 150vh;
+    }
+}
+
+@media screen and (max-height: 770px) {
+    .menu__main{
+        height: 160vh;
+    }
+}
+
+@media screen and (max-height: 720px) {
+    .menu__main{
+        height: 170vh;
+    }
+}
+
+@media screen and (max-height: 680px) {
+    .menu__main{
+        height: 190vh;
+    }
+}
+
+@media screen and (max-height: 605px) {
+    .menu__main{
+        height: 200vh;
+    }
+}
