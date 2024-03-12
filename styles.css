@@ -634,11 +634,18 @@
     }
 }
 
+@media screen and (max-height: 730px) {
+
+    .contact {
+        height: 170vh;
+    }
+}
+
 /* Menu CSS */
 
 .menu__main {
     margin-top: -10px;
-    background: #C2B280;
+    background: rgb(131, 131, 204);
     height: 130vh;
 }
 
